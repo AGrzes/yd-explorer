@@ -11,3 +11,14 @@ jobs:
         - npm ci
       script:
         - npm run build
+      name: Build Host Server
+    - stage: build
+      language: node_js
+      node_js:
+        - node
+      install:
+        - cd host/web
+        - npm ci
+      script:
+        - npm run build
+      name: Build Host Web

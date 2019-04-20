@@ -10,5 +10,4 @@ jobs:
         - cd host
         - npm ci
       script:
-        - cd host
         - npm run build

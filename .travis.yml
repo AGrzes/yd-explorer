@@ -1,0 +1,14 @@
+stages: 
+  - build
+jobs:
+  include:
+    - stage: build
+      language: node_js
+      node_js:
+        - node
+      install:
+        - cd host
+        - npm ci
+      script:
+        - cd host
+        - npm run build

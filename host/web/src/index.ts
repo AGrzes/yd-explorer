@@ -1,0 +1,5 @@
+import 'bootstrap'
+import 'bootstrap/scss/bootstrap.scss'
+import 'jquery'
+import 'popper.js'
+import './app'

@@ -8,6 +8,7 @@
     "watch": "webpack -w -d",
     "test": "nyc mocha test/**/*.{ts,tsx}",
     "format": "tslint 'src/**/*.ts' --fix",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "tslint 'src/**/*.ts'"
   },
   "nyc": {

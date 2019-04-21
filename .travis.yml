@@ -11,6 +11,8 @@ jobs:
         - npm ci
       script:
         - npm run build
+        - npm test
+      after_success: npm run coverage
       name: Build Host Server
     - stage: build
       language: node_js
@@ -21,6 +23,8 @@ jobs:
         - npm ci
       script:
         - npm run build
+        - npm test
+      after_success: npm run coverage
       name: Build Host Web
     - stage: build
       language: node_js
@@ -31,6 +35,8 @@ jobs:
         - npm ci
       script:
         - npm run build
+        - npm test
+      after_success: npm run coverage
       name: Build Server Components
     - stage: build
       language: node_js
@@ -41,4 +47,6 @@ jobs:
         - npm ci
       script:
         - npm run build
+        - npm test
+      after_success: npm run coverage
       name: Build Web Components

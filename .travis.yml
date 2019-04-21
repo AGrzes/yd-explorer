@@ -32,3 +32,13 @@ jobs:
       script:
         - npm run build
       name: Build Server Components
+    - stage: build
+      language: node_js
+      node_js:
+        - node
+      install:
+        - cd components/web
+        - npm ci
+      script:
+        - npm run build
+      name: Build Web Components

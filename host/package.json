@@ -34,7 +34,8 @@
   },
   "dependencies": {
     "debug": "^4.1.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "yd-explorer-server-components": "file:../components/server"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
@@ -43,7 +44,7 @@
     "@types/node": "^10.12.15",
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
-    "nyc": "^13.1.0",
+    "nyc": "^14.0.0",
     "source-map-support": "^0.5.9",
     "ts-node": "^7.0.1",
     "tslint": "^5.11.0",

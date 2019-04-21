@@ -2,7 +2,7 @@
   "name": "yd-explorer-host-web",
   "version": "0.0.1",
   "description": "Web interface of yd-explorer-host",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "scripts": {
     "build": "webpack",
     "watch": "webpack -w -d"
